@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beautiful Form</title>
+<style>
+    body {
+  background-image: url("img/wp11935429.webp");
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+fieldset {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 0 auto;
+  width: 500px;
+  background-color: rgba(41, 34, 34, 0.7);
+}
+
+legend {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+label, input {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.home-button {
+  background-color: #e7e7e7;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+
+
+<form action="emailsend.php" method="post">
+  <fieldset>
+    <legend>Contact Form</legend>
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" name="subject" required><br><br>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+    <input type="submit" value="submit" name="submit">
+  </fieldset>
+</form>
+
+<button class="home-button"><a href="setting.html">Go to Home Page</a></button>
+
+</body>
+</html>
